@@ -1,0 +1,67 @@
+
+
+/* ======== Custom css ======== */
+
+
+/* === Root variable ==== */
+:root{
+    --background-color: #3b7ddd;
+    --second-bg: #1036a3;
+    --background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    --font-icon: #fff;
+    --text-color: #344767;
+}
+/* === // Root variable ==== */
+
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/* === Home page css === */
+.input-group-navbar .btn:hover{
+    background-color: var(--second-bg);
+}
+
+.profile-img{
+    display: flex !important;
+    position: relative;
+    top: 11px;
+}
+
+.profile-img p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    margin-left: 9px;
+    position: relative;
+    top: -2px;
+    color: #000;
+}
+
+.profile-img span{
+    color: var(--background-color);
+}
+
+.profile-img i{
+    color: var(--background-color);
+    font-size: 12px;
+}
+
+.footer p{
+    color: #dfdfdf;
+}
+
+.footer p a{
+    text-decoration: underline;
+}
+
+.footer p a:hover{
+    color: #000 !important;
+}
+
+.sidebar-nav .active{
+    background-color: var(--second-bg);
+}
+
+/* === // Home page css === */

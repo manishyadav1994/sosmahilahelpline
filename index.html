@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<!-- <link rel="shortcut icon" href="img/icons/icon-48x48.png" /> -->
+
+	<link rel="canonical" href="index.html" />
+
+	<title>SOS Help Line</title>
+
+	<!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Link Style css -->
+	<link rel="stylesheet" href="css/customcss.css">
+	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
+	<script src="js/settings.js"></script>
+
+	<!-- Chart js cdn -->
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+	
+</head>
+
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class='sidebar-brand' href='index.html'>
+					<span class="sidebar-brand-text align-middle">
+						LOGO HERE
+						<!-- <sup><small class="badge bg-primary text-uppercase">Pro</small></sup> -->
+					</span>
+					<svg class="sidebar-brand-icon align-middle" width="32px" height="32px" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"
+						stroke-linecap="square" stroke-linejoin="miter" color="#FFFFFF" style="margin-left: -3px">
+						<path d="M12 4L20 8.00004L12 12L4 8.00004L12 4Z"></path>
+						<path d="M20 12L12 16L4 12"></path>
+						<path d="M20 16L12 20L4 16"></path>
+					</svg>
+				</a>
+
+				<!-- <div class="sidebar-user">
+					<div class="d-flex justify-content-center">
+						<div class="flex-shrink-0">
+							<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" />
+						</div>
+						<div class="flex-grow-1 ps-2">
+							<a class="sidebar-user-title dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								Charles Hall
+							</a>
+							<div class="dropdown-menu dropdown-menu-start">
+								<a class='dropdown-item' href='pages-profile.html'><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class='dropdown-item' href='pages-settings.html'><i class="align-middle me-1" data-feather="settings"></i> Settings &
+									Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+
+							<div class="sidebar-user-subtitle">Designer</div>
+						</div>
+					</div>
+				</div> -->
+
+				<ul class="sidebar-nav">
+					<!-- <li class="sidebar-item active">
+						<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link">
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboards</span>
+						</a>
+						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
+							<li class="sidebar-item active"><a class='sidebar-link' href='index.html'>Analytics</a></li>
+						</ul>
+					</li> -->
+
+					<li class="sidebar-item active">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-home menu-icon"></i>
+							<span class="align-middle"> Home </span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-bell-o menu-icon"></i>
+							<span class="align-middle"> SOS Notification </span>
+						</a>
+					</li>  
+					<li class="sidebar-item">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-pencil-square-o menu-icon"></i>
+							<span class="align-middle"> Guidelines of Scheme </span>
+						</a>
+					</li>  
+					<li class="sidebar-item">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-book menu-icon"></i>
+							<span class="align-middle"> Daily Reports </span>
+						</a>
+					</li>  
+					<li class="sidebar-item">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-check-square-o menu-icon"></i>
+							<span class="align-middle"> Resolve Case </span>
+						</a>
+					</li>  
+					<li class="sidebar-item">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-info-circle menu-icon"></i>
+							<span class="align-middle"> Police Station Detail </span>
+						</a>
+					</li>  
+					<li class="sidebar-item">
+						<a class='sidebar-link' href='#'>
+							<i class="fa fa-table menu-icon"></i>
+							<span class="align-middle"> Total Data Registered </span>
+						</a>
+					</li>  
+					<li class="sidebar-item">
+						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="fa fa-link menu-icon"></i> <span class="align-middle">Useful Links</span>
+						</a>
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class='sidebar-link' href='pages-settings.html'>M.P Police</a></li>
+							<li class="sidebar-item"><a class='sidebar-link' href='pages-settings.html'>Cyber Crime</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+
+			<!-- ============= // Header section =============== -->
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<!-- === Toggle button === -->
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+				<!-- === // Toggle Button === -->
+
+				<!-- === Search button === -->
+				<form class="d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<button class="btn" type="button">
+							<i class="align-middle" data-feather="search"></i>
+						</button>
+					</div>
+				</form>
+				<!-- === // Search button === -->
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<!-- ===== Notification dropdown ===== -->
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<!-- ===== // Notification dropdown ===== -->
+						
+						<!-- ===== Language dropdown ===== -->
+						<li class="nav-item dropdown">
+							<a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+								<img src="img/flags/us.png" alt="English" />
+							</a>
+							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/us.png" alt="English" width="20" class="align-middle me-1" />
+									<span class="align-middle">English</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/es.png" alt="Spanish" width="20" class="align-middle me-1" />
+									<span class="align-middle">Spanish</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/ru.png" alt="Russian" width="20" class="align-middle me-1" />
+									<span class="align-middle">Russian</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/de.png" alt="German" width="20" class="align-middle me-1" />
+									<span class="align-middle">German</span>
+								</a>
+							</div>
+						</li>
+						<!-- ===== // Language dropdown ===== -->
+
+						<!-- ===== Fullscreen button ===== -->
+						<li class="nav-item">
+							<a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="maximize"></i>
+								</div>
+							</a>
+						</li>
+						<!-- ===== // Fullscreen button ===== -->
+
+						<!-- ===== Profile button ===== -->
+						<li class="nav-item dropdown">
+							<a class="nav-icon pe-md-0 dropdown-toggle profile-img" href="#" data-bs-toggle="dropdown">
+								<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded" alt="image" />
+								<p> Welcome <span> Raj Kumar </span> <i class="fa fa-angle-down"></i></p>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class='dropdown-item' href='#'><i class="align-middle me-1" data-feather="user"></i> Profile </a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Log out </a>
+							</div>
+						</li>
+						<!-- ===== // Profile button ===== -->
+					</ul>
+				</div>
+			</nav>
+			<!-- =============== // Header section ================ -->
+
+
+			<!-- ========== Page Design Start ========== -->
+			<main class="content page-padd">
+				<div class="container-fluid p-0">
+
+					<!-- === Breadcrumb Section === -->
+					<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+							<h3><strong>Analytics</strong> Dashboard</h3>
+						</div>
+					</div>
+					<!-- === // Breadcrumb Section === -->
+
+					<!-- ==== Start main Row ==== -->
+					<div class="row">
+						<div class="col-lg-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<!-- <h4 class="card-title">Line chart</h4> -->
+									<canvas id="mylineChart"></canvas>
+								</div>
+							</div>
+						</div>
+						<!-- === bar chart === -->
+						<div class="col-lg-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<div id="barchart-container"></div>
+								</div>
+							</div>
+						</div>
+						<!-- === // linechart 2 chart === -->
+						<div class="col-lg-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<div class="chart chart-sm">
+										<canvas id="chartjs-dashboard-line"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- === Piechart Chart === -->
+						<div class="col-lg-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body chart chart-sm">
+									<div id="piechart-container"></div>
+								</div>
+							</div>
+						</div>
+						<!-- === // Pie Chart === -->
+					</div>
+					<!-- ==== // End Main row ==== -->
+ 
+				</div>
+			</main>
+			<!-- ========== // Page Design Start ========== -->
+
+			<!-- ====== Footer ====== -->
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								All Rights Reserved © 2023 - Designed & Developed by <a href="https://orbiqetechnologies.com/" target="_blank" class="text-muted"> Orbiqe Technologies</a>
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<!-- <ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ====== // Footer ====== -->
+		</div>
+	</div>
+
+
+	<!-- chart css -->
+    <style>
+        #piechart-container {
+            position: relative;
+            height: 33.5vh;
+            overflow: hidden;
+        }
+        #barchart-container{
+            height: 33.5vh;
+        }
+		#mylineChart{
+			height: 33.5vh;
+		}
+    </style>
+    <!-- // chart css -->
+
+
+	<!-- ====== JS Script cdn ====== -->
+	<script src="js/app.js"></script>
+	<!-- ====== // JS scropt cdn ===== -->
+ 
+
+	<!-- ============================= Pie Chart JS ============================= -->
+    <script>
+        var dom = document.getElementById('piechart-container');
+    var myChart = echarts.init(dom, null, {
+    renderer: 'canvas',
+    useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+    //   title: {
+    //     text: 'Referer of a Website',
+    //     subtext: 'Fake Data',
+    //     left: 'center'
+    //   },
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left'
+    },
+    series: [
+        {
+        name: 'Access From',
+        type: 'pie',
+        radius: '50%',
+        data: [
+            { value: 1048, name: 'Resolve Case 70%' },
+            { value: 735, name: 'Working Case 30%' },
+            { value: 580, name: 'Registered Case 35%' },
+            { value: 484, name: 'Other 50%' },
+            // { value: 300, name: 'Video Ads' }
+        ],
+        emphasis: {
+            itemStyle: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+        }
+        }
+    ]
+    };
+    if (option && typeof option === 'object') {
+    myChart.setOption(option);
+    }
+    window.addEventListener('resize', myChart.resize);
+    </script>
+    <!-- ============================= // Pie Chart JS ============================= -->
+
+    <!-- ============================= Line chart js ============================= -->
+    <script>
+        var ctx = document.getElementById("mylineChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Dasna",	"Chander Nagar",	"Faridnagar",	"Loni",	"Modinagar", "Muradnagar",	"Vasundhra"],
+                datasets: [{
+                    label: 'Series 1', 
+                    data: [500,	50,	2424,	14040,	14141,	4111,	4544,], // Specify the data values array
+                    fill: false,
+                    borderColor: '#2196f3', // Add custom color border (Line)
+                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
+                }]},
+            options: {
+            responsive: true, // Instruct chart js to respond nicely.
+            maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+            }
+        });
+    </script>
+    <!-- ============================= // Line chart js ============================= -->
+
+    <!-- ============================= bar chart JS ============================= -->
+    <script>
+        var dom = document.getElementById('barchart-container');
+		var myChart = echarts.init(dom, null, {
+		renderer: 'canvas',
+		useDirtyRect: false
+		});
+		var app = {};
+
+		var option;
+
+		option = {
+		title: {
+			// text: 'Accumulated Waterfall Chart'
+		},
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+				type: 'shadow'
+				},
+				formatter: function (params) {
+				let tar;
+				if (params[1] && params[1].value !== '-') {
+					tar = params[1];
+				} else {
+					tar = params[2];
+				}
+				return tar && tar.name + '<br/>' + tar.seriesName + ' : ' + '$' + tar.value;
+				}
+			},
+		legend: {
+			// data: ['Expenses', 'Income']
+			data: ['Income']
+		},
+		grid: {
+			left: '3%',
+			right: '4%',
+			bottom: '3%',
+			containLabel: true
+		},
+		xAxis: {
+			type: 'category',
+			data: (function () {
+			let list = [];
+			for (let i = 1; i <= 9; i++) {
+				list.push(2015  + i);
+			}
+			return list;
+			})()
+		},
+		yAxis: {
+			type: 'value'
+		},
+		series: [
+			{
+			name: 'Placeholder',
+			type: 'bar',
+			stack: 'Total',
+			silent: true,
+			itemStyle: {
+				borderColor: 'transparent',
+				color: 'transparent'
+			},
+			emphasis: {
+				itemStyle: {
+				borderColor: 'transparent',
+				color: 'transparent'
+				}
+			},
+			data: [320, 345, 393, 405, 450, 520, 580, 650, 920,]
+			},
+			{
+			name: 'Income',
+			type: 'bar',
+			stack: 'Total',
+			label: {
+				show: true,
+				position: 'top'
+			},
+			data: [320, 345, 393, 405, 450, 520, 580, 650, 920,]
+			},
+			// {
+			//   name: 'Expenses',
+			//   type: 'bar',
+			//   stack: 'Total',
+			//   label: {
+			//     show: true,
+			//     position: 'bottom'
+			//   },
+			//   data: ['-', '-', '-', 108, 154, '-', '-', '-', 119, 361, 203]
+			// }
+		]
+		};
+
+		if (option && typeof option === 'object') {
+		myChart.setOption(option);
+		}
+
+		window.addEventListener('resize', myChart.resize);
+    </script>
+    <!-- ============================= // bar chart JS ============================= -->
+
+
+	<!-- ============================= Line chart JS ============================= -->
+	<script>
+		var dom = document.getElementById('linechart-container');
+		var myChart = echarts.init(dom, null, {
+		renderer: 'canvas',
+		useDirtyRect: false
+		});
+		var app = {};
+
+		var option;
+
+		option = {
+		title: {
+			text: 'Temperature Change in the Coming Week'
+		},
+		tooltip: {
+			trigger: 'axis'
+		},
+		legend: {},
+		toolbox: {
+			show: true,
+			feature: {
+			dataZoom: {
+				yAxisIndex: 'none'
+			},
+			dataView: { readOnly: false },
+			magicType: { type: ['line', 'bar'] },
+			restore: {},
+			saveAsImage: {}
+			}
+		},
+		xAxis: {
+			type: 'category',
+			boundaryGap: false,
+			data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+		},
+		yAxis: {
+			type: 'value',
+			axisLabel: {
+			formatter: '{value} °C'
+			}
+		},
+		series: [
+			{
+			name: 'Highest',
+			type: 'line',
+			data: [10, 11, 13, 11, 12, 12, 9],
+			markPoint: {
+				data: [
+				{ type: 'max', name: 'Max' },
+				{ type: 'min', name: 'Min' }
+				]
+			},
+			markLine: {
+				data: [{ type: 'average', name: 'Avg' }]
+			}
+			},
+			{
+			name: 'Lowest',
+			type: 'line',
+			data: [1, -2, 2, 5, 3, 2, 0],
+			markPoint: {
+				data: [{ name: '周最低', value: -2, xAxis: 1, yAxis: -1.5 }]
+			},
+			markLine: {
+				data: [
+				{ type: 'average', name: 'Avg' },
+				[
+					{
+					symbol: 'none',
+					x: '90%',
+					yAxis: 'max'
+					},
+					{
+					symbol: 'circle',
+					label: {
+						position: 'start',
+						formatter: 'Max'
+					},
+					type: 'max',
+					name: '最高点'
+					}
+				]
+				]
+			}
+			}
+		]
+		};
+
+		if (option && typeof option === 'object') {
+		myChart.setOption(option);
+		}
+
+		window.addEventListener('resize', myChart.resize);
+	</script>
+	<!-- ============================= // Line chart JS ============================= -->
+
+	<!-- ============================= Line chart 2 JS ============================= -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradientLight = ctx.createLinearGradient(0, 0, 0, 225);
+			gradientLight.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradientLight.addColorStop(1, "rgba(215, 227, 244, 0)");
+			var gradientDark = ctx.createLinearGradient(0, 0, 0, 225);
+			gradientDark.addColorStop(0, "rgba(51, 66, 84, 1)");
+			gradientDark.addColorStop(1, "rgba(51, 66, 84, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: window.theme.id === "light" ? gradientLight : gradientDark,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)",
+								fontColor: "#fff"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<!-- ============================= // Line chart 2 JS ============================= -->
+
+</body>
+</html>
