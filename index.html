@@ -29,11 +29,13 @@
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
 	<div class="wrapper">
+
+		<!-- ======= Sidebar Section ====== -->
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class='sidebar-brand' href='index.html'>
-					<span class="sidebar-brand-text align-middle">
-						LOGO HERE
+					<span class="sidebar-brand-text align-middle logo-img">
+						<img src="image/logo.png" alt="image">
 						<!-- <sup><small class="badge bg-primary text-uppercase">Pro</small></sup> -->
 					</span>
 					<svg class="sidebar-brand-icon align-middle" width="32px" height="32px" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"
@@ -82,7 +84,7 @@
 					<li class="sidebar-item active">
 						<a class='sidebar-link' href='#'>
 							<i class="fa fa-home menu-icon"></i>
-							<span class="align-middle"> Home</span>
+							<span class="align-middle"> Home </span>
 						</a>
 					</li>
 					<li class="sidebar-item">
@@ -126,13 +128,14 @@
 							<i class="fa fa-link menu-icon"></i> <span class="align-middle">Useful Links</span>
 						</a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class='sidebar-link' href='pages-settings.html'>M.P Police</a></li>
-							<li class="sidebar-item"><a class='sidebar-link' href='pages-settings.html'>Cyber Crime</a></li>
+							<li class="sidebar-item"><a class='sidebar-link' href='#'>M.P Police</a></li>
+							<li class="sidebar-item"><a class='sidebar-link' href='#'>Cyber Crime</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 		</nav>
+		<!-- ======= // Sidebar Section ====== -->
 
 		<div class="main">
 
@@ -169,7 +172,7 @@
 								<div class="dropdown-menu-header">
 									4 New Notifications
 								</div>
-								<div class="list-group">
+								<div class="list-group notification-text">
 									<a href="#" class="list-group-item">
 										<div class="row g-0 align-items-center">
 											<div class="col-2">
@@ -225,6 +228,14 @@
 						</li>
 						<!-- ===== // Notification dropdown ===== -->
 						
+
+						<!-- === Alam Audio === -->
+						<li class="nav-item alarm-gif" onclick="audio.play()" data-bs-toggle="modal" data-bs-target="#myModal">
+							<img src="image/alarm-icon.png" id="myImage" alt="image" onclick="document.getElementById('myImage').src='image/alarm-gif.gif'">
+						</li>
+						<!-- === // Alam Audio === -->
+
+					
 						<!-- ===== Language dropdown ===== -->
 						<li class="nav-item dropdown">
 							<a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
@@ -273,6 +284,7 @@
 							</div>
 						</li>
 						<!-- ===== // Profile button ===== -->
+						
 					</ul>
 				</div>
 			</nav>
@@ -286,7 +298,7 @@
 					<!-- === Breadcrumb Section === -->
 					<div class="row mb-2 mb-xl-3">
 						<div class="col-auto d-none d-sm-block">
-							<h3><strong>Analytics</strong> Dashboard</h3>
+							<h3><strong>Dashboard</strong> </h3>
 						</div>
 					</div>
 					<!-- === // Breadcrumb Section === -->
@@ -368,18 +380,64 @@
 	</div>
 
 
+
+	<!-- ===== Notification Model ===== -->
+	<div class="modal alarm-notification" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Emergency Notification</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-2">
+							<img src="image/warning.png" alt="image">
+						</div>
+						<div class="col-lg-10 col-md-10 col-10">
+							<h4> Emergency Has Been Received </h4>
+							<div class="noti-text">
+								<h5> Name </h5>
+								<p> Renuka Singh </p>
+							</div>
+							<div class="noti-text">
+								<h5> Mobile Number </h5>
+								<p> +91-0123456789 </p>
+							</div>
+							<!-- <div class="noti-text">
+								<h5> Audio Recording </h5>
+								<p onclick="audio.play()"> <img src="image/recording-gif.gif" alt="image"> </p>
+							</div> -->
+							<div class="noti-text">
+								<h5> Location Link </h5>
+								<p><a href="https://goo.gl/maps/KgD9xVdaDKkQQ1RG6"> https://goo.gl/maps/KgD9xVdaDKkQQ1RG6 </a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="stopAudio()">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ===== // Notification Model ===== -->
+
+
+
 	<!-- chart css -->
     <style>
         #piechart-container {
-            position: relative;
-            height: 33.5vh;
-            overflow: hidden;
+            height: 250px;
         }
         #barchart-container{
-            height: 33.5vh;
+			height: 250px;
         }
 		#mylineChart{
-			height: 33.5vh;
+			height: 250px;
+		}
+		#piechart-container{
+			height: 250px;
 		}
     </style>
     <!-- // chart css -->
@@ -388,7 +446,22 @@
 	<!-- ====== JS Script cdn ====== -->
 	<script src="js/app.js"></script>
 	<!-- ====== // JS scropt cdn ===== -->
- 
+	
+	<!-- ==== Alam Audio js ==== -->
+	<script>
+		var audio = new Audio("image/police-audio.mp3");
+		audio.oncanplaythrough = function(){
+			audio.play();
+		}
+		audio.loop = true;
+		audio.onended = function(){
+			audio.play();
+		}
+		function stopAudio() {
+			audio.pause();
+		}
+	</script>
+	<!-- ==== Alam Audio js ==== -->
 
 	<!-- ============================= Pie Chart JS ============================= -->
     <script>

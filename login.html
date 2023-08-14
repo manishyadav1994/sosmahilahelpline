@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<!-- <link rel="shortcut icon" href="img/icons/icon-48x48.png" /> -->
+
+	<link rel="canonical" href="index.html" />
+
+	<title>SOS Help Line</title>
+
+	<!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Link Style css -->
+	<link rel="stylesheet" href="css/customcss.css">
+	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
+	<script src="js/settings.js"></script>
+
+	<!-- Chart js cdn -->
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+	
+</head>
+
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+	<div class="wrapper">
+
+		<div class="main">
+
+			<!-- ============= // Header section =============== -->
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<!-- === Toggle button === -->
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+				<!-- === // Toggle Button === -->
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						 
+						<!-- ===== Fullscreen button ===== -->
+						<li class="nav-item">
+							<a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="maximize"></i>
+								</div>
+							</a>
+						</li>
+						<!-- ===== // Fullscreen button ===== -->
+						
+					</ul>
+				</div>
+			</nav>
+			<!-- =============== // Header section ================ -->
+
+
+			<!-- ========== Page Design Start ========== -->
+			<main class="content page-padd login-center">
+				<div class="container p-0">
+
+					<!-- ==== Start main Row ==== -->
+					<div class="row">
+						<div class="col-lg-2 col-md-2"></div>
+                        <div class="col-lg-8 col-md-8 login-page">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 login-side-img">
+                                    <img src="image/login-img.jpg" alt="image">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="login-form-side">
+                                        <div class="brand-logo">
+                                            <img src="image/logo2.png" alt="logo">
+                                            <img src="image/azadi-logo.png" alt="logo" style="float: right;">
+                                        </div>
+                                        <h4>Hello,</h4>
+                                        <h2> Welcome! </h2>
+                                        <form id="form_id" method="post" name="myform" class="pt-3">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control-lg" name="username" id="username" placeholder="Enter Your Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password">
+                                            </div>
+                                            <div class="mt-3">
+                                                <input type="button" value="LOGIN" id="submit" onclick="validate()" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" fdprocessedid="qsvpd9">
+                                            </div>
+                                            <div class="my-2 d-flex justify-content-between align-items-center">
+                                                <div class="form-check">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                                    <label for="vehicle1"> Remember Me <i class="input-helper"></i></label>
+                                                </div>
+                                                <a href="#" class="auth-link text-black">Forgot password?</a>
+                                            </div>
+                                            <div class="text-center font-weight-light"> Don't have an account? <a href="create-account.html" class="text-primary">Create</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2"></div>
+					</div>
+					<!-- ==== // End Main row ==== -->
+ 
+				</div>
+			</main>
+			<!-- ========== // Page Design Start ========== -->
+
+			<!-- ====== Footer ====== -->
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								All Rights Reserved © 2023 - Designed & Developed by <a href="https://orbiqetechnologies.com/" target="_blank" class="text-muted"> Orbiqe Technologies</a>
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<!-- <ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ====== // Footer ====== -->
+		</div>
+	</div>
+
+ 
+    <style>
+        html, body{
+            overflow-y: hidden;
+        }
+    </style>
+
+
+	<!-- ====== JS Script cdn ====== -->
+	<script src="js/app.js"></script>
+	<!-- ====== // JS scropt cdn ===== -->
+ 
+
+</body>
+</html>
